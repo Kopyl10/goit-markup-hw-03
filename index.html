@@ -15,145 +15,166 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Document</title>
   </head>
   <body>
     <header class="header">
-      <nav class="navigation">
-        <a class="logo" href="">Web<span class="studio-header">Studio</span></a>
-        <ul class="link-list page-list">
+      <div class="container header-container">
+        <nav class="navigation nav-container">
+          <a class="logo header-logo" href="./index.html"
+            >Web<span class="studio-header">Studio</span>
+          </a>
+          <ul class="link-list page-list link-container">
+            <li>
+              <a class="header-link link-mode current" href="./index.html"
+                >Студія</a
+              >
+            </li>
+            <li>
+              <a class="header-link link-mode" href="./portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li>
+              <a class="header-link link-mode" href="#contacts">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="page-list address-container">
           <li>
-            <a class="header-link link-mode current" href="./index.html"
-              >Студія</a
-            >
-          </li>
-          <li>
-            <a class="header-link link-mode" href="./portfolio.html"
-              >Портфоліо</a
-            >
-          </li>
-          <li>
-            <a class="header-link link-mode" href="#contacts">Контакти</a>
-          </li>
-        </ul>
-      </nav>
-      <ul class="header-contacts page-list">
-        <li class="header-email">
-          <a class="email link-mode" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li class="header-phone">
-          <a class="phone link-mode" href="tel:+380961111111"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
-    </header>
-    <main>
-      <section class="main-section">
-        <h1 class="main-text">Ефективні рішення для вашого бізнесу</h1>
-        <button class="main-button" type="button">Замовити послугу</button>
-      </section>
-      <section>
-        <ul class="main-list page-list">
-          <li>
-            <h3 class="text-subtitle">УВАГА ДО ДЕТАЛЕЙ</h3>
-            <p class="text-undertitle">
-              Ідейні міркування, і навіть початок повсякденної роботи з
-              формування позиції.
-            </p>
-          </li>
-          <li>
-            <h3 class="text-subtitle">ПУНКТУАЛЬНІСТЬ</h3>
-            <p class="text-undertitle">
-              Завдання організації, особливо рамки і місце навчання кадрів тягне
-              у себе.
-            </p>
-          </li>
-          <li>
-            <h3 class="text-subtitle">ПЛАНУВАННЯ</h3>
-            <p class="text-undertitle">
-              Так само консультація з широким активом значною мірою зумовлює.
-            </p>
-          </li>
-          <li>
-            <h3 class="text-subtitle">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-            <p class="text-undertitle">
-              Значимість цих проблем настільки очевидна, що реалізація планових
-              завдань.
-            </p>
-          </li>
-        </ul>
-      </section>
-      <section>
-        <h2 class="text">Чим ми займаємося</h2>
-        <ul class="main-img page-list">
-          <li>
-            <img src="images/img1.jpg" alt="Person is coding" width="370" />
-          </li>
-          <li>
-            <img
-              src="images/img2.jpg"
-              alt="Person is holding a phone"
-              width="370"
-            />
-          </li>
-          <li>
-            <img
-              src="images/img3.jpg"
-              alt="Person is drawing on Ipad"
-              width="370"
-            />
-          </li>
-        </ul>
-      </section>
-      <section class="team-section">
-        <h2 class="text">Наша команда</h2>
-        <ul class="team-list page-list">
-          <li>
-            <img src="images/card1.jpg" alt="Team member" width="270" />
-            <h3 class="team-title">Ігор Дем'яненко</h3>
-            <p class="team-text">Product Designer</p>
-          </li>
-          <li>
-            <img src="images/card2.jpg" alt="Team member 2" width="270" />
-            <h3 class="team-title">Ольга Рєпіна</h3>
-            <p class="team-text">Frontend Developer</p>
-          </li>
-          <li>
-            <img src="images/card3.jpg" alt="Team member 3" width="270" />
-            <h3 class="team-title">Микола Тарасов</h3>
-            <p class="team-text">Marketing</p>
-          </li>
-          <li>
-            <img src="images/card4.jpg" alt="Team member 4" width="270" />
-            <h3 class="team-title">Михайло Єрмаков</h3>
-            <p class="team-text">UI Designer</p>
-          </li>
-        </ul>
-      </section>
-    </main>
-    <footer class="footer">
-      <a class="logo" href="">Web<span class="studio-footer">Studio</span></a>
-      <address class="contacts-address" id="contacts">
-        <ul class="footer-contacts page-list">
-          <li>
-            <p class="address-text">м. Київ, пр-т Лесі Українки, 26</p>
-          </li>
-          <li>
-            <a class="footer-email link-mode" href="mailto:info@devstudio.com"
+            <a class="email link-mode" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
           <li>
-            <a class="footer-phone link-mode" href="tel:+380961111111"
+            <a class="phone link-mode" href="tel:+380961111111"
               >+38 096 111 11 11</a
             >
           </li>
         </ul>
-      </address>
+      </div>
+    </header>
+    <main>
+      <section class="main-section">
+        <div class="container button-container">
+          <h1 class="main-text main-text-size">Ефективні рішення для вашого бізнесу</h1>
+          <button class="main-button hero-button" type="button">Замовити послугу</button>
+        </div>
+      </section>
+      <section>
+        <div class="container container-wrap">
+          <ul class="main-list page-list text-container">
+            <li class="list-text about-text">
+              <h3 class="text-subtitle">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="text-undertitle">
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
+              </p>
+            </li>
+            <li class="list-text about-text">
+              <h3 class="text-subtitle">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="text-undertitle">
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
+              </p>
+            </li>
+            <li class="list-text about-text">
+              <h3 class="text-subtitle">ПЛАНУВАННЯ</h3>
+              <p class="text-undertitle">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+            <li class="list-text about-text">
+              <h3 class="text-subtitle">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="text-undertitle">
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <div class="container about-container">
+          <h2 class="text">Чим ми займаємося</h2>
+          <ul class="main-img page-list img-wrap">
+            <li>
+              <img src="images/img1.jpg" alt="Person is coding" width="370" />
+            </li>
+            <li>
+              <img
+                src="images/img2.jpg"
+                alt="Person is holding a phone"
+                width="370"
+              />
+            </li>
+            <li>
+              <img
+                src="images/img3.jpg"
+                alt="Person is drawing on Ipad"
+                width="370"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="team-section">
+        <div class="container team-container">
+          <h2 class="text">Наша команда</h2>
+          <ul class="team-list page-list team-wrap">
+            <li>
+              <img src="images/card1.jpg" alt="Team member" width="270" />
+              <h3 class="team-title">Ігор Дем'яненко</h3>
+              <p class="team-text">Product Designer</p>
+            </li>
+            <li>
+              <img src="images/card2.jpg" alt="Team member 2" width="270" />
+              <h3 class="team-title">Ольга Рєпіна</h3>
+              <p class="team-text">Frontend Developer</p>
+            </li>
+            <li>
+              <img src="images/card3.jpg" alt="Team member 3" width="270" />
+              <h3 class="team-title">Микола Тарасов</h3>
+              <p class="team-text">Marketing</p>
+            </li>
+            <li>
+              <img src="images/card4.jpg" alt="Team member 4" width="270" />
+              <h3 class="team-title">Михайло Єрмаков</h3>
+              <p class="team-text">UI Designer</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-container">
+        <a class="logo footer-logo" href="">Web<span class="studio-footer">Studio</span></a>
+        <address class="contacts-address" id="contacts">
+          <ul class="footer-contacts page-list footer-address-container">
+            <li>
+              <p class="address-text">м. Київ, пр-т Лесі Українки, 26</p>
+            </li>
+            <li>
+              <a class="footer-email link-mode" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="footer-phone link-mode" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
