@@ -13,7 +13,6 @@ body {
   font-size: 14px;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
-  width: 1600px;
 }
 
 p,
@@ -63,6 +62,9 @@ ol {
   font-family: inherit;
   color: currentColor;
   text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
 }
 
 .link-mode:hover,
@@ -93,8 +95,6 @@ ol {
 .nav-container {
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 30px;
 }
 .link-container {
   display: flex;
@@ -105,8 +105,7 @@ ol {
   align-items: center;
   margin-left: auto;
   gap: 40px;
-  padding-top: 24px;
-  padding-bottom: 30px;
+  list-style: none;
 }
 .header-logo {
   margin-right: 93px;
@@ -120,11 +119,7 @@ ol {
 }
 
 .main-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   text-align: center;
-  margin-bottom: 94px;
 }
 .container.button-container {
   display: flex;
@@ -198,14 +193,10 @@ ol {
   border-radius: 4px;
   display: inline-block;
 }
-.about-container {
-  margin-bottom: 94px;
-}
-.about-text {
-  width: 270px;
-}
+
 .container-wrap {
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .btn-mode:hover,
 .btn-mode:focus {
@@ -232,10 +223,8 @@ ol {
 }
 
 .text-container {
-  display: flex;
-  align-items: flex-start;
   gap: 30px;
-  justify-content: space-evenly;
+  display: flex;
 }
 
 .about-text {
@@ -243,17 +232,24 @@ ol {
   flex-direction: column;
   margin: 0;
 }
+.about-container {
+  padding-bottom: 94px;
+}
+.about-text {
+  width: 270px;
+}
 
 .img-wrap {
   display: flex;
   gap: 30px;
-  justify-content: space-between;
+}
+.about-img {
+  display: block;
 }
 
 .team-wrap {
   display: flex;
   gap: 30px;
-  justify-content: space-between;
   border-radius: 0 0 4px 4px;
 }
 
@@ -265,6 +261,7 @@ ol {
 .team-section {
   background: #f5f4fa;
   padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .text {
@@ -317,7 +314,7 @@ ol {
 }
 
 .member-img {
-  margin-bottom: 30px;
+  display: block;
 }
 .team-title {
   font-family: inherit;
@@ -337,10 +334,14 @@ ol {
   letter-spacing: 0.03em;
   color: var(--team-font);
   text-align: center;
-  margin-bottom: 30px;
 }
 
-.text-secondary, .title-secondary {
+.about-member {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.text-secondary,
+.title-secondary {
   margin-left: 24px;
 }
 
@@ -352,16 +353,19 @@ ol {
 
 .footer {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-address-list {
+  list-style: none;
 }
 
-.footer-container {
-  display: flex;
-  flex-direction: column;
+.footer-logo {
+  margin-bottom: 28px;
+  display: inline-block;
 }
-
-.footer-address-container {
-  display: flex;
-  flex-direction: column;
+.address-text {
+margin-bottom: 12px;
 }
 
 .address-text {
@@ -371,7 +375,6 @@ ol {
   letter-spacing: 0.03em;
   color: var(--secondary-color);
   font-style: normal;
-  margin-bottom: 12px;
 }
 
 .studio-footer {
@@ -391,11 +394,4 @@ ol {
 
 .email-item {
   margin-bottom: 12px;
-}
-.phone-item {
-  margin-bottom: 60px;
-}
-.footer-logo {
-  margin-top: 60px;
-  margin-bottom: 30px;
 }
