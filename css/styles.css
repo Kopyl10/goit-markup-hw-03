@@ -86,8 +86,8 @@ ol {
 }
 /**---------- header-container ----------**/
 
-.header-section {
-  margin-bottom: 94px;
+.header {
+  border-bottom: 1px solid #ececec;
 }
 .header-container {
   display: flex;
@@ -117,14 +117,12 @@ ol {
   padding-top: 195px;
   padding-bottom: 200px;
 }
-
+.hero-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .main-section {
   text-align: center;
-}
-.container.button-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .item-button {
@@ -158,7 +156,7 @@ ol {
   align-items: center;
   gap: 8px;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .main-text {
@@ -173,6 +171,8 @@ ol {
 .main-text-size {
   margin-bottom: 33px;
   width: 696px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main-button {
@@ -227,11 +227,6 @@ ol {
   display: flex;
 }
 
-.about-text {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-}
 .about-container {
   padding-bottom: 94px;
 }
@@ -295,7 +290,6 @@ ol {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  margin-bottom: 94px;
 }
 .page-img-list a {
   text-decoration: none;
@@ -304,13 +298,12 @@ ol {
   list-style-type: none;
 }
 .img-about {
-  border: 1px solid #eee;
   width: 370px;
   height: 404px;
 }
 
 .img-item {
-  margin-bottom: 20px;
+  display: block;
 }
 
 .member-img {
@@ -340,13 +333,12 @@ ol {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.text-secondary,
-.title-secondary {
-  margin-left: 24px;
-}
-
-.text-secondary {
-  margin-bottom: 20px;
+.about-photo {
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  border-top: none;
+  padding: 20px 24px;
 }
 
 /**---------- Footer ----------**/
@@ -365,7 +357,7 @@ ol {
   display: inline-block;
 }
 .address-text {
-margin-bottom: 12px;
+  margin-bottom: 12px;
 }
 
 .address-text {
